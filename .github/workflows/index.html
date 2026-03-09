@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon site Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 20px;
+        }
+
+        main {
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            width: 400px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .status {
+            color: green;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Serveur Web Opérationnel</h1>
+</header>
+
+<main>
+    <div class="card">
+        <h2>Déploiement réussi</h2>
+
+        <p class="status">✔ Site déployé avec GitHub Actions</p>
+
+        <p>Serveur : Nginx</p>
+        <p>CI/CD : GitHub Actions (Self-Hosted Runner)</p>
+
+        <p>
+            Si vous voyez cette page,<br>
+            le pipeline de déploiement fonctionne correctement.
+        </p>
+    </div>
+</main>
+
+<footer>
+    <p>Projet CI/CD – Déploiement automatique</p>
+</footer>
+
+</body>
+</html>
