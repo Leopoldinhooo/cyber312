@@ -14,7 +14,8 @@ jobs:
    - arm64
   steps:
    - name: Verification
-     run: echo "Test de fonctionnement du Runner !"
+     run:
+      echo "Test de fonctionnement du Runner !"
 
 
    - name: tests de commandes
