@@ -15,7 +15,7 @@ jobs:
   steps:
    - name: Verification
      run:
-      echo "Test de fonctionnement du Runner !"
+      echo "Test de fonctionnement du Runner"
 
 
    - name: tests de commandes
