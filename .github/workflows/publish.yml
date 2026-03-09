@@ -14,7 +14,7 @@ jobs:
 
       - name: Publication de la page index.html
         run: |
-          whoamoi
+          whoami
           sudo -n mkdir -p /var/www/site
           sudo -n cp index.html /var/www/site/index.html
           sudo -n chown www-data:www-data /var/www/site/index.html
