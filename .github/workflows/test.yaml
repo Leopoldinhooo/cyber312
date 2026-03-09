@@ -10,8 +10,8 @@ jobs:
  test-runner:
   runs-on:
    - self-hosted
-   - linux
-   - arm64
+   - Linux
+   - ARM64
   steps:
    - name: Verification
      run:
