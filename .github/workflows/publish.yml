@@ -1,0 +1,21 @@
+name: Publication Web
+
+on:
+  push:
+    branches:
+      - LABOS
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, Linux, ARM64]
+    steps:
+      - name: Récupération du dépôt
+        uses: actions/checkout@v4
+
+      - name: Publication de la page index.html
+        run: |
+          whoami
+          sudo -n mkdir -p /var/www/site
+          sudo -n cp index.html /var/www/site/index.html
+          sudo -n chown www-data:www-data /var/www/site/index.html
+          sudo -n systemctl reload nginx
